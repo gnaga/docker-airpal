@@ -13,7 +13,7 @@ ENV AIRPAL_VERSION=0.1 AIRPAL_HOME=/airpal
 
 # Install Prerequisites and Download Airpal
 RUN apt-get update \
-	&& apt-get install -y build-essential git gradle python mysql-server \
+	&& apt-get install -y build-essential git gradle python \
 	&& git clone https://github.com/airbnb/airpal.git \
 	&& rm -rf /var/lib/apt/lists/*
 
