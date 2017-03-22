@@ -30,8 +30,8 @@ COPY airpal /usr/sbin/airpal
 
 RUN chmod +x /docker-entrypoint.sh /usr/sbin/airpal
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+#ENTRYPOINT ["/docker-entrypoint.sh"]
 
 EXPOSE 8081 8082
 
-CMD ["airpal", "server", "reference.yml"]
+#CMD ["airpal", "server", "reference.yml"]
